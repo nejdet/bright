@@ -28,7 +28,7 @@ SECRET_KEY = 'f^(i(%5^47$9r-^cn&lyq7sbu*vjt_-pid1!7wc813@3efcz45'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['160.153.225.99', 'localhost']
 
 
 # Application definition
@@ -155,9 +155,6 @@ INSTALLED_APPS = (
 LANGUAGES = (
     ## Customize this
     ('en', gettext('en')),
-    ('bs', gettext('bs')),
-    ('ar', gettext('ar')),
-    ('tr', gettext('tr')),
 )
 
 CMS_LANGUAGES = {
@@ -166,27 +163,6 @@ CMS_LANGUAGES = {
         {
             'code': 'en',
             'name': gettext('en'),
-            'redirect_on_fallback': True,
-            'public': True,
-            'hide_untranslated': False,
-        },
-        {
-            'code': 'bs',
-            'name': gettext('bs'),
-            'redirect_on_fallback': True,
-            'public': True,
-            'hide_untranslated': False,
-        },
-        {
-            'code': 'ar',
-            'name': gettext('ar'),
-            'redirect_on_fallback': True,
-            'public': True,
-            'hide_untranslated': False,
-        },
-        {
-            'code': 'tr',
-            'name': gettext('tr'),
             'redirect_on_fallback': True,
             'public': True,
             'hide_untranslated': False,
@@ -206,7 +182,14 @@ CMS_TEMPLATES = (
     ('sidebar_left.html', 'Sidebar Left'),
     ('sidebar_right.html', 'Sidebar Right'),
     ('homeen.html', 'Home En'),
-    ('homeen2.html', 'Home En2')
+    ('homeen2.html', 'Home En2'),
+    ('bosniatours.html', 'Bosnia Tours'),
+    ('balkantours.html', 'Balkan Tours'),
+    ('eutours.html', 'EU Tours'),
+    ('cities.html', 'Cities'),
+    ('rentacar.html', 'Rent-a-Car'),
+    ('alternatives.html', 'Alternatives'),
+    ('contact.html', 'Contact')
 )
 
 CMS_PERMISSION = True
