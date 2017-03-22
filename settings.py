@@ -189,7 +189,8 @@ CMS_TEMPLATES = (
     ('cities.html', 'Cities'),
     ('rentacar.html', 'Rent-a-Car'),
     ('alternatives.html', 'Alternatives'),
-    ('contact.html', 'Contact')
+    ('contact.html', 'Contact'),
+    ('bosniatours2.html', 'Bosnia Tours2')
 )
 
 CMS_PERMISSION = True
