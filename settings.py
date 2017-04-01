@@ -190,7 +190,8 @@ CMS_TEMPLATES = (
     ('rentacar.html', 'Rent-a-Car'),
     ('alternatives.html', 'Alternatives'),
     ('contact.html', 'Contact'),
-    ('bosniatours2.html', 'Bosnia Tours2')
+    ('bosniatours2.html', 'Bosnia Tours2'),
+    ('sarajevotour.html', "Sarajevo Tour")
 )
 
 CMS_PERMISSION = True

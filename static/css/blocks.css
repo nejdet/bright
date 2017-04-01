@@ -1,3 +1,5 @@
+
+{% load cms_tags staticfiles%}
 /*
  * Template Name: Unify - Responsive Bootstrap Template
  * Description: Business, Corporate, Portfolio, E-commerce, Blog and One Page Template.
