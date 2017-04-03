@@ -191,7 +191,21 @@ CMS_TEMPLATES = (
     ('alternatives.html', 'Alternatives'),
     ('contact.html', 'Contact'),
     ('bosniatours2.html', 'Bosnia Tours2'),
-    ('sarajevotour.html', "Sarajevo Tour")
+    ('sarajevotour.html', "Sarajevo Tour"),
+    ('sm-tour.html', "SM Tour"),
+    ('smt-tour.html', "SMT Tour"),
+    ('smts-tour.html', "SMTS Tour"),
+    ('smjs-tour.html', "SMJS Tour"),
+    ('smvt-tour.html', "SMVT Tour"),
+    ('albania1-tour.html', "ALBANIA1 Tour"),
+    ('albania2-tour.html', "ALBANIA2 Tour"),
+    ('bk-tour.html', "BK Tour"),
+    ('bs-tour.html', "BS Tour"),
+    ('bkkm-tour.html', "BKKM Tour"),
+    ('hk-tour.html', "HK Tour"),
+    ('km-tour.html', "KM Tour"),
+    ('bka-tour.html', "BKA Tour"),
+    ('gallery.html', "Gallery")
 )
 
 CMS_PERMISSION = True
