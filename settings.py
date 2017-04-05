@@ -205,7 +205,9 @@ CMS_TEMPLATES = (
     ('hk-tour.html', "HK Tour"),
     ('km-tour.html', "KM Tour"),
     ('bka-tour.html', "BKA Tour"),
-    ('gallery.html', "Gallery")
+    ('gallery.html', "Gallery"),
+    ('aboutus.html', 'aboutus'),
+    ('hotels.html', 'Hotels')
 )
 
 CMS_PERMISSION = True
