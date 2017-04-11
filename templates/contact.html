@@ -109,57 +109,9 @@
 					<div id="map" class="map map-box map-box-space margin-bottom-40"></div>
 					<!-- End Google Map -->
 
-					<p>Bize emaille, telefonla yada aşağıdaki formu doldurarak ulaşabilirsiniz. </p><br />
-
-					<form action="{% static "php/sky-forms-pro/demo-contacts-process.php"%}" method="post" id="sky-form3" class="sky-form contact-style">
-						<fieldset class="no-padding">
-							<label>İsim Soyisim <span class="color-red">*</span></label>
-							<div class="row sky-space-20">
-								<div class="col-md-7 col-md-offset-0">
-									<div>
-										<input type="text" name="name" id="name" class="form-control">
-									</div>
-								</div>
-							</div>
-
-							<label>Email <span class="color-red">*</span></label>
-							<div class="row sky-space-20">
-								<div class="col-md-7 col-md-offset-0">
-									<div>
-										<input type="text" name="email" id="email" class="form-control">
-									</div>
-								</div>
-							</div>
-
-							<label>Telefon <span class="color-red">*</span></label>
-							<div class="row sky-space-20">
-								<div class="col-md-7 col-md-offset-0">
-									<div>
-										<input type="text" name="telefon" id="telefon" class="form-control">
-									</div>
-								</div>
-							</div>
-
-							<label>Mesaj <span class="color-red">*</span></label>
-							<div class="row sky-space-20">
-								<div class="col-md-11 col-md-offset-0">
-									<div>
-										<textarea rows="8" name="message" id="message" class="form-control"></textarea>
-									</div>
-								</div>
-							</div>
-
-							<p><button type="submit" class="btn-u">GÖNDER</button></p>
-						</fieldset>
-
-						<div class="message">
-							<i class="rounded-x fa fa-check"></i>
-							<p>Mesajınız başarıyla gönderilmiştir.</p>
-						</div>
-					</form>
-
-					{% placeholder 'Form3' %}
-
+					<div class="col-md-7">
+						{% placeholder 'Form3' %}
+					</div>
 				</div><!--/col-md-9-->
 
 				<div class="col-md-3">

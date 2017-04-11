@@ -29,7 +29,7 @@ SECRET_KEY = 'f^(i(%5^47$9r-^cn&lyq7sbu*vjt_-pid1!7wc813@3efcz45'
 DEBUG = True
 
 ALLOWED_HOSTS = ['160.153.225.99', 'localhost']
-
+ADMINS = [('Nejdet Dogru', 'nejdet.dogru@ibu.edu.ba')]
 
 # Application definition
 
@@ -78,6 +78,7 @@ STATICFILES_DIRS = (
 SITE_ID = 1
 
 
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -85,21 +86,21 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.contrib.auth.context_processors.auth',
-    'django.contrib.messages.context_processors.messages',
-    'django.template.context_processors.i18n',
-    'django.template.context_processors.debug',
-    'django.template.context_processors.request',
-    'django.template.context_processors.media',
-    'django.template.context_processors.csrf',
-    'django.template.context_processors.tz',
-    'sekizai.context_processors.sekizai',
-    'django.template.context_processors.static',
-    'cms.context_processors.cms_settings'
+                'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.i18n',
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.template.context_processors.media',
+                'django.template.context_processors.csrf',
+                'django.template.context_processors.tz',
+                'sekizai.context_processors.sekizai',
+                'django.template.context_processors.static',
+                'cms.context_processors.cms_settings',
             ],
             'loaders': [
                 'django.template.loaders.filesystem.Loader',
-    'django.template.loaders.app_directories.Loader',
-    'django.template.loaders.eggs.Loader'
+                'django.template.loaders.app_directories.Loader',
+                'django.template.loaders.eggs.Loader',
             ],
         },
     },
@@ -148,8 +149,11 @@ INSTALLED_APPS = (
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
-    'brighttours2'
-    #'aldryn_bootstrap3'
+    'brighttours2',
+    'adminsortable',
+    'cmsplugin_contact_plus',
+    'djangocms_forms'
+
 )
 
 LANGUAGES = (
@@ -236,3 +240,32 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
 )
+
+CMSPLUGIN_CONTACT_PLUS_TEMPLATES = [
+    ('cmsplugin_contact_plus/contact.html', 'Contact Form'),
+    ('cmsplugin_contact_plus/contact2.html', 'Contact2 Form')
+]
+
+
+CONTACT_PLUS_FROM_EMAIL='brighttourscontactform@gmail.com'
+CONTACT_PLUS_REPLY_EMAIL_LABEL='brighttourscontactform@gmail.com'
+
+EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_HOST_USER = 'brighttourscontactform@gmail.com'
+EMAIL_HOST_PASSWORD = '@Bright387'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST='smtp.gmail.com'
+
+
+DJANGOCMS_FORMS_PLUGIN_MODULE = gettext('Generic')
+DJANGOCMS_FORMS_PLUGIN_NAME = gettext('Form')
+DJANGOCMS_FORMS_DEFAULT_TEMPLATE = 'djangocms_forms/form_template/default.html'
+DJANGOCMS_FORMS_TEMPLATES = (
+    ('djangocms_forms/form_template/default.html', gettext('Default')),
+)
+DJANGOCMS_FORMS_USE_HTML5_REQUIRED = False
+DJANGOCMS_FORMS_WIDGET_CSS_CLASSES = {'__all__': ('form-control', ) }
+DJANGOCMS_FORMS_REDIRECT_DELAY = 1000  # 1 seconds
+
