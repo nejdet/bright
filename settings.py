@@ -182,14 +182,10 @@ CMS_LANGUAGES = {
 
 CMS_TEMPLATES = (
     ## Customize this
-    ('fullwidth.html', 'Fullwidth'),
-    ('sidebar_left.html', 'Sidebar Left'),
-    ('sidebar_right.html', 'Sidebar Right'),
     ('homeen.html', 'Home En'),
     ('homeen2.html', 'Home En2'),
     ('bosniatours.html', 'Bosnia Tours'),
     ('balkantours.html', 'Balkan Tours'),
-    ('eutours.html', 'EU Tours'),
     ('cities.html', 'Cities'),
     ('rentacar.html', 'Rent-a-Car'),
     ('alternatives.html', 'Alternatives'),
@@ -208,7 +204,7 @@ CMS_TEMPLATES = (
     ('bkkm-tour.html', "BKKM Tour"),
     ('hk-tour.html', "HK Tour"),
     ('km-tour.html', "KM Tour"),
-    ('bka-tour.html', "BKA Tour"),
+    ('bb-tour.html', "BB Tour"),
     ('gallery.html', "Gallery"),
     ('aboutus.html', 'aboutus'),
     ('hotels.html', 'Hotels')

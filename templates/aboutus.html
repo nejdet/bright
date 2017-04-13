@@ -17,17 +17,7 @@
 
 
 				<!-- Topbar -->
-				<div class="topbar">
-					<ul class="loginbar pull-right">
-						<li><a href="/aboutus">HAKKIMIZDA</a></li>
-						<li class="topbar-devider"></li>
-						<li><a href="/contact">İLETİŞİM</a></li>
-						<li class="topbar-devider"></li>
-						<li><a href="/gallery">GALERİ</a></li>
-						<li class="topbar-devider"></li>
-						<li><a href="/hotels">OTELLER</a></li>
-					</ul>
-				</div>
+				{% include 'topbar.html' %}
 				<!-- End Topbar -->
 
 				<!-- Toggle get grouped for better mobile display -->
@@ -94,11 +84,13 @@
 
 		<!--=== News Block ===-->
 		<div class="container content-sm">
+		{% include 'topsocialbar.html'%}
+
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 md-margin-bottom-10">
-						<h2 class="title-v2">NERETVA TRAVEL</h2>
-						<p>Çok kısa zamanda turizm sektöründe sağladığı başarıları, kısa sürede ulaştığı geniş müşteri portföyü, uzman kadrosu ve profesyonel çözümleriyle bu gün ülke turizmine ve ekonomisine sağladığı katkının haklı gururunu taşımaktadır. • Ayrıca, turizm hizmetlerinin yanı sıra sosyal sorumluluk bilinciyle varlığını sürdürdüğü topluma katma değer sağlayacak faaliyetleri de gerçekleştirmektedir. • NERETVA TRAVEL müşterilerine verdiği hizmet kalitesiyle ve gelişmekte olan dinamik turizm dünyasını takip etmesiyle beklentilere uygun istikrarlı çözümler sunmaktadır. Ayrıca kurumlara yönelik çalışmalarında; ihtiyaç duyulan hizmetin kurumsal yapınıza en uygun şekilde karşılanması amacıyla sürekli yatırımlarını sürdürmekte, teknolojik altyapısını geliştirmektedir.
+						<h2 class="title-v2">BRIGHT TOURS</h2>
+						<p>Çok kısa zamanda turizm sektöründe sağladığı başarıları, kısa sürede ulaştığı geniş müşteri portföyü, uzman kadrosu ve profesyonel çözümleriyle bu gün ülke turizmine ve ekonomisine sağladığı katkının haklı gururunu taşımaktadır. • Ayrıca, turizm hizmetlerinin yanı sıra sosyal sorumluluk bilinciyle varlığını sürdürdüğü topluma katma değer sağlayacak faaliyetleri de gerçekleştirmektedir. • BRIGHT TOURS müşterilerine verdiği hizmet kalitesiyle ve gelişmekte olan dinamik turizm dünyasını takip etmesiyle beklentilere uygun istikrarlı çözümler sunmaktadır. Ayrıca kurumlara yönelik çalışmalarında; ihtiyaç duyulan hizmetin kurumsal yapınıza en uygun şekilde karşılanması amacıyla sürekli yatırımlarını sürdürmekte, teknolojik altyapısını geliştirmektedir.
 						<h2 class="title-v2">Kurumsal Hizmetler</h2>
 						<p>İşletmelerin her türlü kurumsal ihtiyacına özel şekilde,<br>
 						BALKANLAR ve ORTA AVRUPA;<br>

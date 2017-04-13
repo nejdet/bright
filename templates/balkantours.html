@@ -17,17 +17,7 @@
 
 
 				<!-- Topbar -->
-				<div class="topbar">
-					<ul class="loginbar pull-right">
-						<li><a href="/aboutus">HAKKIMIZDA</a></li>
-						<li class="topbar-devider"></li>
-						<li><a href="/contact">İLETİŞİM</a></li>
-						<li class="topbar-devider"></li>
-						<li><a href="/gallery">GALERİ</a></li>
-						<li class="topbar-devider"></li>
-						<li><a href="/hotels">OTELLER</a></li>
-					</ul>
-				</div>
+				{% include 'topbar.html' %}
 				<!-- End Topbar -->
 
 				<!-- Toggle get grouped for better mobile display -->
@@ -99,150 +89,160 @@
 
 		<!--=== Content Part ===-->
 		<div class="container content">
+		{% include 'topsocialbar.html'%}
+
 			<div class="row blog-page">
-				<div class="popular-tours text-center g-heading-v8 " id="Popular-Tours">
+
+				<!-- Balkan Tours Section -->
+				<div class="special-purposes text-center g-heading-v8  g-pb-20" id="Purposes">
 					<div class="container">
-						<h2 class="h2"> <strong>Balkan</strong> turları</h2>
-					</div>
-				</div>
-				<div>
-					<p align="center">Balkanlardaki tatilinizi paket turlardan birini seçerek geçirebilir yada gezmek istediğiniz şehirleri siz belirleyebilirsiniz.</p>
-				</div>
-					<!-- Bosna Tours 2 Section -->
-					<div class="popular-tours text-center g-heading-v8 g-pt-40 g-pb-20" id="Popular-Tours">
-						<div class="container">
-							<div class="row text-left">
-								<!-- Item 3 -->
-								<div class="col-md-4 col-xs-6 col-2xs-12 g-mb-30">
-									<div class="popular-tours-item">
-										<div class="img-wrapper img-wrapper--shadow"><img src="{% static "img-temp/bosnia-tours/middlesize/sarajevosebil3.jpg"%}" alt="ALT" class="img-responsive"></div>
-										<div class="popular-tours-item-info">
-											<div class="popular-tours-item-info-price"><strong>€320.00</strong>'den itibaren</div>
-											<div class="popular-tours-item-info-inner">
-												<h3>Arnavutluk</h3>
-												<p>2 gece 3 gün</p>
-											</div>
-										</div>
-										<a href="/balkan-tours/albania1-tour" class="popular-tours-item__more">More</a>
+						<div class="row g-mb-20">
+							<div class="col-sm-8 col-sm-offset-2">
+								<h2 class="h2"><strong>Balkan</strong> Turları</h2>
+								<div class="row">
+									<div class="col-sm-8 col-sm-offset-2">
+										<p class="g-mb-40">Balkanlarda geçireceğiniz tatilinizi turlarımızdan birine katılarak daha eğlenceli bir hale dönüştürebilirsiniz.</p>
 									</div>
 								</div>
-								<!-- End Item 3 -->
-
-								<!-- Item 3 -->
-								<div class="col-md-4 col-xs-6 col-2xs-12 g-mb-30">
-									<div class="popular-tours-item">
-										<div class="img-wrapper img-wrapper--shadow"><img src="{% static "img-temp/bosnia-tours/middlesize/travnik.jpg"%}" alt="ALT" class="img-responsive"></div>
-										<div class="popular-tours-item-info">
-											<div class="popular-tours-item-info-price"><strong>€320.00</strong>'den itibaren</div>
-											<div class="popular-tours-item-info-inner">
-												<h3>Arnavutluk</h3>
-												<p>3 gece 4 gün</p>
-											</div>
-										</div>
-										<a href="/balkan-tours/albania2-tour" class="popular-tours-item__more">More</a>
-									</div>
-								</div>
-								<!-- End Item 3 -->
-
-								<!-- Item 3 -->
-								<div class="col-md-4 col-xs-6 col-2xs-12 g-mb-30">
-									<div class="popular-tours-item">
-										<div class="img-wrapper img-wrapper--shadow"><img src="{% static "img-temp/bosnia-tours/middlesize/travnik.jpg"%}" alt="ALT" class="img-responsive"></div>
-										<div class="popular-tours-item-info">
-											<div class="popular-tours-item-info-price"><strong>€320.00</strong>'den itibaren</div>
-											<div class="popular-tours-item-info-inner">
-												<h3>Bosna Hersek - Karadağ</h3>
-												<p>4 gece 5 gün</p>
-											</div>
-										</div>
-										<a href="/balkan-tours/bk-tour" class="popular-tours-item__more">More</a>
-									</div>
-								</div>
-								<!-- End Item 3 -->
-
-								<!-- Item 3 -->
-								<div class="col-md-4 col-xs-6 col-2xs-12 g-mb-30">
-									<div class="popular-tours-item">
-										<div class="img-wrapper img-wrapper--shadow"><img src="{% static "img-temp/bosnia-tours/middlesize/travnik.jpg"%}" alt="ALT" class="img-responsive"></div>
-										<div class="popular-tours-item-info">
-											<div class="popular-tours-item-info-price"><strong>€320.00</strong>'den itibaren</div>
-											<div class="popular-tours-item-info-inner">
-												<h3>Bosna Hersek - Sırbistan</h3>
-												<p>4 gece 5 gün</p>
-											</div>
-										</div>
-										<a href="/balkan-tours/bs-tour" class="popular-tours-item__more">More</a>
-									</div>
-								</div>
-								<!-- End Item 3 -->
-
-								<!-- Item 4 -->
-								<div class="col-md-4 col-xs-6 col-2xs-12 g-mb-30">
-									<div class="popular-tours-item">
-										<div class="img-wrapper img-wrapper--shadow"><img src="{% static "img-temp/bosnia-tours/middlesize/jajce.jpg"%}" alt="ALT" class="img-responsive"></div>
-										<div class="popular-tours-item-info">
-											<div class="popular-tours-item-info-price"><strong>€760.00</strong>'den itibaren</div>
-											<div class="popular-tours-item-info-inner">
-												<h3>Bosna Hersek - Karadağ - Kosova - Makedonya</h3>
-												<p>4 gece 5 gün</p>
-											</div>
-										</div>
-										<a href="/balkan-tours/bkkm-tour" class="popular-tours-item__more">More</a>
-									</div>
-								</div>
-								<!-- End Item 4 -->
-
-								<!-- Item 4 -->
-								<div class="col-md-4 col-xs-6 col-2xs-12 g-mb-30">
-									<div class="popular-tours-item">
-										<div class="img-wrapper img-wrapper--shadow"><img src="{% static "img-temp/bosnia-tours/middlesize/jajce.jpg"%}" alt="ALT" class="img-responsive"></div>
-										<div class="popular-tours-item-info">
-											<div class="popular-tours-item-info-price"><strong>€760.00</strong>'den itibaren</div>
-											<div class="popular-tours-item-info-inner">
-												<h3>Hırvatistan - Karadağ</h3>
-												<p>4 gece 5 gün</p>
-											</div>
-										</div>
-										<a href="/balkan-tours/hk-tour" class="popular-tours-item__more">More</a>
-									</div>
-								</div>
-								<!-- End Item 4 -->
-
-								<!-- Item 4 -->
-								<div class="col-md-4 col-xs-6 col-2xs-12 g-mb-30">
-									<div class="popular-tours-item">
-										<div class="img-wrapper img-wrapper--shadow"><img src="{% static "img-temp/bosnia-tours/middlesize/jajce.jpg"%}" alt="ALT" class="img-responsive"></div>
-										<div class="popular-tours-item-info">
-											<div class="popular-tours-item-info-price"><strong>€760.00</strong>'den itibaren</div>
-											<div class="popular-tours-item-info-inner">
-												<h3>Kosova - Makedonya</h3>
-												<p>3 gece 4 gün</p>
-											</div>
-										</div>
-										<a href="/balkan-tours/km-tour" class="popular-tours-item__more">More</a>
-									</div>
-								</div>
-								<!-- End Item 4 -->
-
-								<!-- Item 4 -->
-								<div class="col-md-4 col-xs-6 col-2xs-12 g-mb-30">
-									<div class="popular-tours-item">
-										<div class="img-wrapper img-wrapper--shadow"><img src="{% static "img-temp/bosnia-tours/middlesize/jajce.jpg"%}" alt="ALT" class="img-responsive"></div>
-										<div class="popular-tours-item-info">
-											<div class="popular-tours-item-info-price"><strong>€760.00</strong>'den itibaren</div>
-											<div class="popular-tours-item-info-inner">
-												<h3>Bosna Hersek - Karadağ - Arnavutluk</h3>
-												<p>4 gece 5 gün</p>
-											</div>
-										</div>
-										<a href="/balkan-tours/bka-tour" class="popular-tours-item__more">More</a>
-									</div>
-								</div>
-								<!-- End Item 4 -->
 							</div>
 						</div>
+
+						<div class="row text-left">
+							<!-- Item 3 -->
+							<div class="col-md-4 col-xs-6 col-2xs-12 g-mb-30">
+								<div class="popular-tours-item">
+									<div class="img-wrapper img-wrapper--shadow"><img src="{% static "img-temp/balkan-tours/thumbs/albania.jpg"%}" alt="ALT" class="img-responsive"></div>
+									<div class="popular-tours-item-info">
+										<div class="popular-tours-item-info-price"><strong>195€</strong>'den başlayan fiyatlar</div>
+										<div class="popular-tours-item-info-inner">
+											<h3>Arnavutluk-1</h3>
+											<p>2 gece 3 gün</p>
+										</div>
+									</div>
+									<a href="/balkan-tours/albania1-tour" class="popular-tours-item__more">Ayrıntılar</a>
+								</div>
+							</div>
+							<!-- End Item 3 -->
+
+							<!-- Item 3 -->
+							<div class="col-md-4 col-xs-6 col-2xs-12 g-mb-30">
+								<div class="popular-tours-item">
+									<div class="img-wrapper img-wrapper--shadow"><img src="{% static "img-temp/balkan-tours/thumbs/albania.jpg"%}" alt="ALT" class="img-responsive"></div>
+									<div class="popular-tours-item-info">
+										<div class="popular-tours-item-info-price"><strong>245€</strong>'den başlayan fiyatlar</div>
+										<div class="popular-tours-item-info-inner">
+											<h3>Arnavutluk-2</h3>
+											<p>3 gece 4 gün</p>
+										</div>
+									</div>
+									<a href="/balkan-tours/albania2-tour" class="popular-tours-item__more">Ayrıntılar</a>
+								</div>
+							</div>
+							<!-- End Item 3 -->
+
+							<!-- Item 3 -->
+							<div class="col-md-4 col-xs-6 col-2xs-12 g-mb-30">
+								<div class="popular-tours-item">
+									<div class="img-wrapper img-wrapper--shadow"><img src="{% static "img-temp/balkan-tours/thumbs/kotor.jpg"%}" alt="ALT" class="img-responsive"></div>
+									<div class="popular-tours-item-info">
+										<div class="popular-tours-item-info-price"><strong>350€</strong>'den başlayan fiyatlar</div>
+										<div class="popular-tours-item-info-inner">
+											<h3>Bosna Hersek - Karadağ</h3>
+											<p>4 gece 5 gün</p>
+										</div>
+									</div>
+									<a href="/balkan-tours/bk-tour" class="popular-tours-item__more">Ayrıntılar</a>
+								</div>
+							</div>
+							<!-- End Item 3 -->
+
+							<!-- Item 3 -->
+							<div class="col-md-4 col-xs-6 col-2xs-12 g-mb-30">
+								<div class="popular-tours-item">
+									<div class="img-wrapper img-wrapper--shadow"><img src="{% static "img-temp/balkan-tours/thumbs/serbia.jpg"%}" alt="ALT" class="img-responsive"></div>
+									<div class="popular-tours-item-info">
+										<div class="popular-tours-item-info-price"><strong>350€</strong>'den başlayan fiyatlar</div>
+										<div class="popular-tours-item-info-inner">
+											<h3>Bosna Hersek - Sırbistan</h3>
+											<p>4 gece 5 gün</p>
+										</div>
+									</div>
+									<a href="/balkan-tours/bs-tour" class="popular-tours-item__more">Ayrıntılar</a>
+								</div>
+							</div>
+							<!-- End Item 3 -->
+
+							<!-- Item 4 -->
+							<div class="col-md-4 col-xs-6 col-2xs-12 g-mb-30">
+								<div class="popular-tours-item">
+									<div class="img-wrapper img-wrapper--shadow"><img src="{% static "img-temp/balkan-tours/thumbs/macedonia.jpg"%}" alt="ALT" class="img-responsive"></div>
+									<div class="popular-tours-item-info">
+										<div class="popular-tours-item-info-price"><strong>450€</strong>'den başlayan fiyatlar</div>
+										<div class="popular-tours-item-info-inner">
+											<h3>Bosna Hersek - Karadağ - Kosova - Makedonya</h3>
+											<p>6 gece 7 gün</p>
+										</div>
+									</div>
+									<a href="/balkan-tours/bkkm-tour" class="popular-tours-item__more">Ayrıntılar</a>
+								</div>
+							</div>
+							<!-- End Item 4 -->
+
+							<!-- Item 4 -->
+							<div class="col-md-4 col-xs-6 col-2xs-12 g-mb-30">
+								<div class="popular-tours-item">
+									<div class="img-wrapper img-wrapper--shadow"><img src="{% static "img-temp/balkan-tours/thumbs/croatia.jpg"%}" alt="ALT" class="img-responsive"></div>
+									<div class="popular-tours-item-info">
+										<div class="popular-tours-item-info-price"><strong>425€</strong>'den başlayan fiyatlar</div>
+										<div class="popular-tours-item-info-inner">
+											<h3>Adriyatik</h3>
+											<p>4 gece 5 gün</p>
+										</div>
+									</div>
+									<a href="/balkan-tours/hk-tour" class="popular-tours-item__more">Ayrıntılar</a>
+								</div>
+							</div>
+							<!-- End Item 4 -->
+
+							<!-- Item 4 -->
+							<div class="col-md-4 col-xs-6 col-2xs-12 g-mb-30">
+								<div class="popular-tours-item">
+									<div class="img-wrapper img-wrapper--shadow"><img src="{% static "img-temp/balkan-tours/thumbs/kosova2.jpg"%}" alt="ALT" class="img-responsive"></div>
+									<div class="popular-tours-item-info">
+										<div class="popular-tours-item-info-price"><strong>250€</strong>'den başlayan fiyatlar</div>
+										<div class="popular-tours-item-info-inner">
+											<h3>Kosova - Makedonya</h3>
+											<p>3 gece 4 gün</p>
+										</div>
+									</div>
+									<a href="/balkan-tours/km-tour" class="popular-tours-item__more">Ayrıntılar</a>
+								</div>
+							</div>
+							<!-- End Item 4 -->
+
+							<!-- Item 4 -->
+							<div class="col-md-4 col-xs-6 col-2xs-12 g-mb-30">
+								<div class="popular-tours-item">
+									<div class="img-wrapper img-wrapper--shadow"><img src="{% static "img-temp/balkan-tours/thumbs/kotor.jpg"%}" alt="ALT" class="img-responsive"></div>
+									<div class="popular-tours-item-info">
+										<div class="popular-tours-item-info-price"><strong>390€</strong>'den başlayan fiyatlar</div>
+										<div class="popular-tours-item-info-inner">
+											<h3>Büyük Balkanlar</h3>
+											<p>7 gece 8 gün</p>
+										</div>
+									</div>
+									<a href="/balkan-tours/bb-tour" class="popular-tours-item__more">Ayrıntılar</a>
+								</div>
+							</div>
+							<!-- End Item 4 -->
+						</div>
+
+
+
 					</div>
-					<!-- End Bosnia Tours2 Section -->
+				</div>
+				<!-- End Balkan Tours Section -->
+
 			</div><!--/row-->
 		</div><!--/container-->
 		<!--=== End Content Part ===-->

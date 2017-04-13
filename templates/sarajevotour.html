@@ -17,17 +17,7 @@
 
 
 				<!-- Topbar -->
-				<div class="topbar">
-					<ul class="loginbar pull-right">
-						<li><a href="/aboutus">HAKKIMIZDA</a></li>
-						<li class="topbar-devider"></li>
-						<li><a href="/contact">İLETİŞİM</a></li>
-						<li class="topbar-devider"></li>
-						<li><a href="/gallery">GALERİ</a></li>
-						<li class="topbar-devider"></li>
-						<li><a href="/hotels">OTELLER</a></li>
-					</ul>
-				</div>
+				{% include 'topbar.html' %}
 				<!-- End Topbar -->
 
 				<!-- Toggle get grouped for better mobile display -->
@@ -91,6 +81,8 @@
 
 		<!--=== Content Part ===-->
 		<div class="container content">
+		{% include 'topsocialbar.html'%}
+
 			<div class="row blog-page">
 				<div class="popular-tours text-center g-heading-v8 " id="Popular-Tours">
 					<div class="container">
@@ -108,7 +100,7 @@
 						</div>
 						<div class="panel-body">
 							<p style="text-align:center">
-							<b style="font-size:30px">300€</b>'dan başlayan fiyatlar
+							<b style="font-size:30px">120€</b>'dan başlayan fiyatlar
 							</p>
 						</div>
 					</div>
@@ -133,134 +125,7 @@
 
 			<div class="row">
 				<!-- Begin Sidebar Menu -->
-				<div class="col-md-2">
-					<ul class="list-group sidebar-nav-v1" id="sidebar-nav">
-						<!-- Bosna tours -->
-						<li class="list-group-item list-toggle">
-							<a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-bosniatours"><b>Bosna Turları</b></a>
-							<ul id="collapse-bosniatours" class="collapse">
-								<li><a href="../../bosnia-tours/sarajevo/slider900x600">Saraybosna</a></li>
-								<li><a href="../../bosnia-tours/sm-tour">Saraybosna-Mostar</a></li>
-								<li><a href="../../bosnia-tours/smt-tour">Saraybosna-Mostar-Travnik</a></li>
-								<li><a href="../../bosnia-tours/smts-tour">Saraybosna-Mostar-Travnik-Saraybosna</a></li>
-								<li><a href="../../bosnia-tours/smjs-tour">Saraybosna-Mostar-Jajce-Saraybosna</a></li>
-								<li><a href="../../bosnia-tours/smvt-tour">Saraybosna-Mostar-Travnik-Vişegrad</a></li>
-							</ul>
-						</li>
-						<!-- End Bosna tours-->
-						<!-- Balkan tours -->
-						<li class="list-group-item list-toggle">
-							<a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-balkantours"><b>Balkan Turları</b></a>
-							<ul id="collapse-balkantours" class="collapse">
-								<li><a href="../../balkan-tours/albania1-tour">Arnavutluk (2 gece 3 gün)</a></li>
-								<li><a href="../../balkan-tours/albania2-tour">Arnavutluk (3 gece 4 gün)</a></li>
-								<li><a href="../../balkan-tours/bk-tour">Bosna Hersek-Karadağ</a></li>
-								<li><a href="../../balkan-tours/bs-tour">Bosna Hersek-Sırbistan</a></li>
-								<li><a href="../../balkan-tours/bkkm-tour">Bosna Hersek-Karadağ-Kosova-Makedonya</a></li>
-								<li><a href="../../balkan-tours/hk-tour">Hırvatistan-Karadağ</a></li>
-								<li><a href="../../balkan-tours/km-tour">Kosova-Makedonya</a></li>
-								<li><a href="../../balkan-tours/bka-tour">Bosna Hersek-Karadağ-Arnavutluk</a></li>
-							</ul>
-						</li>
-						<!-- End Balkan tours-->
-					</ul>
-
-					<!-- Activities -->
-					<div class="posts margin-bottom-40">
-						<div class="headline headline-md"><h2>Alternatif Turlar</h2></div>
-						<dl class="dl-horizontal">
-							<dt><a href="/alternatives"><img src="{% static "img-temp/alternatives/thumbs/atbinicilik.jpg"%}" alt="" /></a></dt>
-							<dd>
-								<p><a href="/alternatives"><b>At Binicilik</b><br>Kişi başı 20€</a></p>
-							</dd>
-						</dl>
-						<dl class="dl-horizontal">
-							<dt><a href="/alternatives"><img src="{% static "img-temp/alternatives/thumbs/balikcilik.jpg"%}" alt="" /></a></dt>
-							<dd>
-								<p><a href="/alternatives"><b>Balıkçılık</b><br>Kişi başı 20€</a></p>
-							</dd>
-						</dl>
-						<dl class="dl-horizontal">
-							<dt><a href="/alternatives"><img src="{% static "img-temp/alternatives/thumbs/buzpateni.jpg"%}" alt="" /></a></dt>
-							<dd>
-								<p><a href="/alternatives"><b>Buz Pateni</b><br>Kişi başı 20€</a></p>
-							</dd>
-						</dl>
-						<dl class="dl-horizontal">
-							<dt><a href="/alternatives"><img src="{% static "img-temp/alternatives/thumbs/cave.jpg"%}" alt="" /></a></dt>
-							<dd>
-								<p><a href="/alternatives"><b>Mağara Gezileri</b><br>Kişi başı 20€</a></p>
-							</dd>
-						</dl>
-						<dl class="dl-horizontal">
-							<dt><a href="/alternatives"><img src="{% static "img-temp/alternatives/thumbs/dagoteli.jpg"%}" alt="" /></a></dt>
-							<dd>
-								<p><a href="/alternatives"><b>Dağ Oteli</b><br>Kişi başı 20€</a></p>
-							</dd>
-						</dl>
-						<dl class="dl-horizontal">
-							<dt><a href="/alternatives"><img src="{% static "img-temp/alternatives/thumbs/esekciftligi.jpg"%}" alt="" /></a></dt>
-							<dd>
-								<p><a href="/alternatives"><b>Eşek Çifliği</b><br>Kişi başı 20€</a></p>
-							</dd>
-						</dl>
-						<dl class="dl-horizontal">
-							<dt><a href="/alternatives"><img src="{% static "img-temp/alternatives/thumbs/kamping.jpg"%}" alt="" /></a></dt>
-							<dd>
-								<p><a href="/alternatives"><b>Kamp</b><br>Kişi başı 20€</a></p>
-							</dd>
-						</dl>
-						<dl class="dl-horizontal">
-							<dt><a href="/alternatives"><img src="{% static "img-temp/alternatives/thumbs/kaplica.jpg"%}" alt="" /></a></dt>
-							<dd>
-								<p><a href="/alternatives"><b>Termal Tesisler</b><br>Kişi başı 20€</a></p>
-							</dd>
-						</dl>
-						<dl class="dl-horizontal">
-							<dt><a href="/alternatives"><img src="{% static "img-temp/alternatives/thumbs/kayak.jpg"%}" alt="" /></a></dt>
-							<dd>
-								<p><a href="/alternatives"><b>Kayak</b><br>Kişi başı 20€</a></p>
-							</dd>
-						</dl>
-						<dl class="dl-horizontal">
-							<dt><a href="/alternatives"><img src="{% static "img-temp/alternatives/thumbs/piramit.jpg"%}" alt="" /></a></dt>
-							<dd>
-								<p><a href="/alternatives"><b>Piramitler</b><br>Kişi başı 20€</a></p>
-							</dd>
-						</dl>
-						<dl class="dl-horizontal">
-							<dt><a href="/alternatives"><img src="{% static "img-temp/alternatives/thumbs/rafting.jpg"%}" alt="" /></a></dt>
-							<dd>
-								<p><a href="/alternatives"><b>Rafting</b><br>Kişi başı 20€</a></p>
-							</dd>
-						</dl>
-						<dl class="dl-horizontal">
-							<dt><a href="/alternatives"><img src="{% static "img-temp/alternatives/thumbs/soskoyu.jpg"%}" alt="" /></a></dt>
-							<dd>
-								<p><a href="/alternatives"><b>SOS Köyü</b><br>Kişi başı 20€</a></p>
-							</dd>
-						</dl>
-						<dl class="dl-horizontal">
-							<dt><a href="/alternatives"><img src="{% static "img-temp/alternatives/thumbs/titonunsiginagi.jpg"%}" alt="" /></a></dt>
-							<dd>
-								<p><a href="/alternatives"><b>Tito'nun Sığınağı</b><br>Kişi başı 20€</a></p>
-							</dd>
-						</dl>
-						<dl class="dl-horizontal">
-							<dt><a href="/alternatives"><img src="{% static "img-temp/alternatives/thumbs/treking.jpg"%}" alt="" /></a></dt>
-							<dd>
-								<p><a href="/alternatives"><b>Treking</b><br>Kişi başı 20€</a></p>
-							</dd>
-						</dl>
-						<dl class="dl-horizontal">
-							<dt><a href="/alternatives"><img src="{% static "img-temp/alternatives/thumbs/yamacparasutu.jpg"%}" alt="" /></a></dt>
-							<dd>
-								<p><a href="/alternatives"><b>Yamaç Paraşütü</b><br>Kişi başı 20€</a></p>
-							</dd>
-						</dl>
-					</div>
-					<!-- End Activities -->
-				</div>
+				{% include "tourleftsidebar.html" %}
 				<!-- End Sidebar Menu -->
 
 				<!-- Begin Content -->
