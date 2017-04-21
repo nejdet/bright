@@ -187,6 +187,7 @@ CMS_TEMPLATES = (
     ('bosniatours.html', 'Bosnia Tours'),
     ('balkantours.html', 'Balkan Tours'),
     ('cities.html', 'Cities'),
+    ('cities2.html', 'Cities2'),
     ('rentacar.html', 'Rent-a-Car'),
     ('alternatives.html', 'Alternatives'),
     ('contact.html', 'Contact'),
@@ -207,7 +208,8 @@ CMS_TEMPLATES = (
     ('bb-tour.html', "BB Tour"),
     ('gallery.html', "Gallery"),
     ('aboutus.html', 'aboutus'),
-    ('hotels.html', 'Hotels')
+    ('hotels.html', 'Hotels'),
+    ('dailytours.html', 'DailyTours')
 )
 
 CMS_PERMISSION = True
