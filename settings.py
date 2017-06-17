@@ -190,7 +190,6 @@ CMS_LANGUAGES = {
 
 CMS_TEMPLATES = (
     ## Customize this
-    ('homeen.html', 'Home En'),
     ('homeen2.html', 'Home En2'),
     ('bosniatours.html', 'Bosnia Tours'),
     ('balkantours.html', 'Balkan Tours'),
